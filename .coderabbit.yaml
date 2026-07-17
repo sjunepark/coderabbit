@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+
+reviews:
+  # Comprehensive feedback, including style and best-practice suggestions.
+  profile: assertive
+  request_changes_workflow: false
+
+  # Keep generated summaries with the rest of CodeRabbit's review output.
+  high_level_summary: true
+  high_level_summary_in_walkthrough: true
+  review_status: false
+
+  # Keep routine review output focused on actionable information.
+  in_progress_fortune: false
+  poem: false
+
+  # Reviews are explicitly requested by applying the coderabbit-review label.
+  auto_review:
+    enabled: false
+    auto_incremental_review: false
+    drafts: false
+    base_branches:
+      - ".*"
+    labels:
+      - coderabbit-review
