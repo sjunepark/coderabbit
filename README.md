@@ -38,6 +38,19 @@ Automatic reviews are disabled by default. Add the `coderabbit-review` label to
 a pull request to request a review. Later pushes are not reviewed
 automatically; comment `@coderabbitai review` to request another review.
 
+### Who can trigger a review
+
+- Only the repository owner and invited collaborators can manage labels on a
+  personal-account repository. Ordinary external contributors cannot apply
+  `coderabbit-review`.
+- An invited collaborator can apply the label and trigger a review.
+- `chat.allow_non_org_members: false` is configured, but CodeRabbit documents
+  this restriction only for GitHub organization repositories. Repositories
+  owned by the personal `sjunepark` account should not rely on it to block
+  external comment interactions.
+- Use an organization-owned repository when restricting comment commands to
+  organization members is required.
+
 To inspect the effective configuration and the source of each value, comment
 the following on a pull request:
 

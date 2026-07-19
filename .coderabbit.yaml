@@ -23,3 +23,7 @@ reviews:
       - ".*"
     labels:
       - coderabbit-review
+
+chat:
+  # Restrict comment commands and chat to organization members.
+  allow_non_org_members: false
